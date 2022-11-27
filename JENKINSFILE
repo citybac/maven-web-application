@@ -6,6 +6,8 @@ echo "The job name is: ${env.JOB_NAME}"
 echo "The Build name is:${env.BUILD_NUMBER}"
 echo "The Node name is:${env.NODE_NAME}"
 
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
+
 //checkout code state
 stage('CheckoutCode'){
 git branch: 'development', credentialsId: 'd1fb689a-48a5-44ed-83eb-6fa86d64995c', url: 'https://github.com/citybac/maven-web-application.git'
