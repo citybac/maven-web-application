@@ -21,7 +21,7 @@ sh "${mavenHome}/bin/mvn clean package"
 }
 
 
-/*
+
 //Execute SonarQube Report
 stage('ExecuteSonarQubeReport'){
 sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -40,7 +40,7 @@ ec2-user@172.31.32.158/:/opt/apache-tomcat-9.0.68/webapps/"
 }    
 
 }
-*/
+
 }//try closing
 
 catch(e){
