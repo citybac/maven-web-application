@@ -20,7 +20,7 @@ stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
 
-
+*/
 
 //Execute SonarQube Report
 stage('ExecuteSonarQubeReport'){
