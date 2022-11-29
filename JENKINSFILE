@@ -69,8 +69,8 @@ def sendslacknotifications(String buildStatus = 'STARTED') {
 
   // Override default values based on build status
   if (buildStatus == 'STARTED') {
-    color = 'YELLOW'
-    colorCode = '#FFFF00'
+    color = 'CORAL'
+    colorCode = '#ff7f50'
   } else if (buildStatus == 'SUCCESS') {
     color = 'GREEN'
     colorCode = '#00FF00'
