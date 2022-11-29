@@ -56,8 +56,6 @@ sendSlackNotifications(currentBuild.result)
 
 //function for slack notifications
 
-
-
 def sendslacknotifications(String buildStatus = 'STARTED') {
   // build status of null means successful
   buildStatus =  buildStatus ?: 'SUCCESS'
