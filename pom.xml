@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://35.154.93.191:9980/mamatha/repository/citybac-release/</url>
+	      <url>http://35.154.66.120:9980/mamatha/repository/citybac-release</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://35.154.93.191:9980/mamatha/repository/citybac-snapshot/</url>
+	      <url>http://35.154.66.120:9980/mamatha/repository/citybac-snapshot</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
